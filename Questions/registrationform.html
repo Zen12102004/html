@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            p{
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Resistration Form</h1>
+        <p>
+            Please fill out the form below to register for our site.Fields with hold labels are required.
+        </p>
+        <form>
+            <p><label>Name: <input type="text"></label></p>
+            <p><label>Gender: <input type="radio" name="gender"> Male </label>
+                <label><input type="radio" name="gender"> Female </label>
+            </p>
+            <p><label for ="os" >Operating Systems : 
+                <select id="os" name="os">
+                    <option value="Windows">Windows</option>
+                    <option value="Linux">Linux</option>
+                    <option value="Mac">Mac</option>
+                </select>
+            </label></p>
+            <p>
+                <label>Toys : <input type="checkbox" name="toys">Digital Camera </label>
+                <label>Toys : <input type="checkbox" name="toys">MP3 Player </label>
+                <label>Toys : <input type="checkbox" name="toys">Wireless LAN </label>
+            </p>
+            <p>
+                <label>Potrait : <input type ="file" name="portrait"></label>
+            </p>
+            <p>
+                <label for="comments">Mini Biography : <textarea name="comments" rows="10" cols="100" ></textarea> </label>
+                
+            </p>
+            <p><button type="submit">Resistration</button></p>
+        </form>
+    </body>
+</html>
