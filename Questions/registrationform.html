@@ -2,20 +2,52 @@
     <head>
         <title>Document</title>
         <style>
-            p{
-                margin: 0;
+            form.div{
+                margin-bottom: 1em;
             }
+            div.submit input{
+                margin-left: 165px;
+            }
+            label.field{
+                display: block;
+                float: left;
+                
+            }
+
+            input[type="text"],select,textarea{
+                width: 300px;
+                font:18px verdana;
+                border: solid 2px #666;
+                background-color: #ada;
+            
+            }
+            div.required label.field{
+                font-weight: bold;
+            }
+
+            div.required input, div.required select{
+                background-color: #6a6;
+                border: solid 2px #000;
+                font-weight: bold;
+            }
+            
         </style>
     </head>
     <body>
-        <h1>Resistration Form</h1>
+        <h1 >Resistration Form</h1>
         <p>
             Please fill out the form below to register for our site.Fields with hold labels are required.
         </p>
-        <form>
-            <p><label>Name: <input type="text"></label></p>
-            <p><label>Gender: <input type="radio" name="gender"> Male </label>
-                <label><input type="radio" name="gender"> Female </label>
+        <form action="/resistration/" method="get" >
+            <div class="required">
+                <label class="field" for="name">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div class="required">
+                <label class="field" >Gender: <input type="radio" name="gender"> Male </label>
+                <label  class="field"  ><input type="radio" name="gender"> Female </label>
+            </div>
+            <p>
             </p>
             <p><label for ="os" >Operating Systems : 
                 <select id="os" name="os">
