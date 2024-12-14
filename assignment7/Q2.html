@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+            header{
+                background-color: rgb(61, 25, 95);
+                font-size: 50px;
+                text-align: center;
+                font-weight: bolder;
+                padding: 10px;
+                color: aliceblue;
+            }
+            .border{
+                border: 2px solid black;
+                padding: 5px;
+            }
+           
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            Feedback Form
+        </header>
+        <form>
+            <div class="border">
+                <p>
+                    <label> Name: <input type="text" maxlength="15" required></label>
+                </p>
+                <p>
+                    <label>Email ID : <input type="email" required></label>
+                </p>
+            
+            <p>
+                <b><u>Rating</u></b>
+            </p>
+            <p>  
+                <label>1 <img src="star.png" width="30px"> <input type="radio" name="rating"> </label>
+            </p>
+            <p>  
+                <label>2 <img src="star.png" width="30px"> <input type="radio" name="rating" > </label>
+            </p>
+            <p>  
+                <label>3 <img src="star.png" width="30px"> <input type="radio" name="rating"> </label>
+            </p>
+            <p>  
+                <label>4 <img src="star.png" width="30px"> <input type="radio" name="rating"> </label>
+            </p>
+            <p>  
+                <label>5 <img src="star.png" width="30px"> <input type="radio" name="rating"   > </label>
+            </p>
+            <p>
+                Comments
+            </p>
+            <p>
+                
+                <label for="comments"> <textarea name="comments" rows="10" cols="100" ></textarea> </label>
+                
+            </p>
+        </div>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+
+        </form>
+    </body>
+</html>

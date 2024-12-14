@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Document</title>
+        <style>
+        #preferred-language{
+            background-color: #a4b8b1;
+            color: white;
+            padding: 4px;
+            font-size: 16px;
+            border: none;
+            
+        }
+        .js{
+            color: blue;
+        }
+
+        .py{
+            font-family: 'Georgia', serif;
+            color: green;
+        }
+
+        .java{
+            font-family: 'Arial Black', Gadget, sans-serif;
+            color: orange;
+        }
+
+        .cpl{
+            font-family: 'Times New Roman', Times, serif;
+            color: purple;
+        }
+        .rby{
+            font-family: Verdana, Tahoma, sans-serif;
+            color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <form>
+            <p><b>Favorite Programming Language</b></p>
+            <p>
+                <label> HTML <input type="checkbox" name="fpl"> </label>
+                <label> CSS <input type="checkbox" name="fpl"> </label>
+                <label> JavaScript<input type="checkbox" name="fpl"> </label>
+                <label> Python<input type="checkbox" name="fpl"> </label>
+                <label> Java  <input type="checkbox" name="fpl"> </label>
+            </p>
+
+            <p>
+                <select id="preferred-language">
+                    
+                        <option value="" disabled selected>Select your language</option>
+                        <option value="JavaScript" class="js">JavaScript</option>
+                        <option value="Python" class="py">Python</option>
+                        <option value="Java" class="java" >Java</option>
+                        <option value="C++" class="cpl">C++</option>
+                        <option value="Ruby" class="rby ">Ruby</option>
+                    
+                    
+                </select>
+          
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+    </body>
+</html>
